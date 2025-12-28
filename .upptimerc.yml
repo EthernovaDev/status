@@ -1,36 +1,39 @@
-# Change these first
-owner: upptime # Your GitHub organization or username, where this repository lives
-repo: upptime # The name of this repository
+owner: EthernovaDev
+repo: status
 
 sites:
-  - name: Google
-    url: https://www.google.com
-  - name: Wikipedia
-    url: https://en.wikipedia.org
-  - name: Hacker News
-    url: https://news.ycombinator.com
-  - name: Test Broken Site
-    url: https://thissitedoesnotexist.koj.co
-  - name: IPv6 test
-    url: forwardemail.net
-    port: 80
-    check: "tcp-ping"
-    ipv6: true
+  - name: Website
+    url: https://ethnova.net
+  - name: Mining Pool
+    url: https://pool.ethnova.net
+  - name: Explorer
+    url: https://explorer.ethnova.net
+  - name: Public RPC
+    url: https://rpc.ethnova.net
+    method: POST
+    headers:
+      - "Content-Type: application/json"
+    body: '{"jsonrpc":"2.0","method":"eth_blockNumber","params":[],"id":1}'
+    expectedStatusCodes:
+      - 200
+  - name: Stats API
+    url: https://api.ethnova.net/stats.json
+    expectedStatusCodes:
+      - 200
 
 status-website:
-  # Add your custom domain name, or remove the `cname` line if you don't have a domain
-  # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
-  cname: demo.upptime.js.org
-  # baseUrl: /your-repo-name
-  logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
-  name: Upptime
-  introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
-  introMessage: This is a sample status page which uses **real-time** data from our [GitHub repository](https://github.com/upptime/upptime). No server required — just GitHub Actions, Issues, and Pages. [**Get your own for free**](https://github.com/upptime/upptime)
+  baseUrl: /status
+  name: Ethernova Status
+  introTitle: "Ethernova Network Status"
+  introMessage: "Real-time uptime and latency for Ethernova RPC, Explorer, and Mining Pool."
   navbar:
     - title: Status
-      href: /
-    - title: GitHub
-      href: https://github.com/$OWNER/$REPO
-
-# Upptime also supports notifications, assigning issues, and more
-# See https://upptime.js.org/docs/configuration
+      href: /status
+    - title: Website
+      href: https://ethnova.net
+    - title: Explorer
+      href: https://explorer.ethnova.net
+    - title: RPC
+      href: https://rpc.ethnova.net
+    - title: Pool
+      href: https://pool.ethnova.net
