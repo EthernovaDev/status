@@ -21,6 +21,12 @@
                       "status":  "up"
                   },
                   {
+                      "name":  "Node Explorer",
+                      "url":  "https://nodeexplorer.ethnova.net",
+                      "slug":  "node-explorer",
+                      "status":  "up"
+                  },
+                  {
                       "name":  "Public RPC",
                       "url":  "https://rpc.ethnova.net",
                       "slug":  "public-rpc",
@@ -34,7 +40,7 @@
                   }
               ],
     "status-website":  {
-                           "baseUrl":  "/status",
+                           "cname":  "status.ethnova.net",
                            "theme":  "night",
                            "name":  "Ethernova Status",
                            "introTitle":  "Ethernova Network Status",
@@ -51,6 +57,10 @@
                                           {
                                               "title":  "Explorer",
                                               "href":  "https://explorer.ethnova.net"
+                                          },
+                                          {
+                                              "title":  "Node Explorer",
+                                              "href":  "https://nodeexplorer.ethnova.net"
                                           },
                                           {
                                               "title":  "RPC",

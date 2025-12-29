@@ -60,6 +60,26 @@
                              }
     },
     {
+        "name":  "Node Explorer",
+        "url":  "https://nodeexplorer.ethnova.net",
+        "icon":  "https://icons.duckduckgo.com/ip3/nodeexplorer.ethnova.net.ico",
+        "slug":  "node-explorer",
+        "status":  "up",
+        "uptime":  "100.00%",
+        "uptimeDay":  "100.00%",
+        "uptimeWeek":  "100.00%",
+        "uptimeMonth":  "100.00%",
+        "uptimeYear":  "100.00%",
+        "time":  539,
+        "timeDay":  539,
+        "timeWeek":  539,
+        "timeMonth":  539,
+        "timeYear":  539,
+        "dailyMinutesDown":  {
+
+                             }
+    },
+    {
         "name":  "Public RPC",
         "url":  "https://rpc.ethnova.net",
         "icon":  "https://icons.duckduckgo.com/ip3/rpc.ethnova.net.ico",
