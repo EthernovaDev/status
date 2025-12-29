@@ -8,6 +8,10 @@ sites:
     url: https://pool.ethnova.net
   - name: Explorer
     url: https://explorer.ethnova.net
+  - name: Node Explorer
+    url: https://nodeexplorer.ethnova.net
+    expectedStatusCodes:
+      - 200
   - name: Public RPC
     url: https://rpc.ethnova.net
     method: POST
@@ -34,6 +38,8 @@ status-website:
       href: https://ethnova.net
     - title: Explorer
       href: https://explorer.ethnova.net
+    - title: Node Explorer
+      href: https://nodeexplorer.ethnova.net
     - title: RPC
       href: https://rpc.ethnova.net
     - title: Pool
