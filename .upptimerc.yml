@@ -23,12 +23,13 @@ sites:
 
 status-website:
   baseUrl: /status
+  theme: night
   name: Ethernova Status
   introTitle: "Ethernova Network Status"
   introMessage: "Fast, clear uptime and latency for Ethernova RPC, Explorer, and Mining Pool."
   navbar:
     - title: Status
-      href: /status
+      href: /
     - title: Website
       href: https://ethnova.net
     - title: Explorer

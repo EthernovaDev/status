@@ -2,15 +2,18 @@
 
 Official uptime and latency status page for core Ethernova services. Built with Upptime, GitHub Actions, and GitHub Pages.
 
-Live status: https://ethernovadev.github.io/status/
+## Status Page
 
-## Monitored Services
+Live URL: https://ethernovadev.github.io/status/
 
+Monitored endpoints:
 - https://ethnova.net
 - https://pool.ethnova.net
 - https://explorer.ethnova.net
 - https://rpc.ethnova.net
 - https://api.ethnova.net/stats.json
+
+Monitors are configured in `.upptimerc.yml`.
 
 ## How it works
 
