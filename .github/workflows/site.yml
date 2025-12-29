@@ -41,11 +41,22 @@ jobs:
           command: "site"
         env:
           GH_PAT: ${{ github.token }}
-      - name: Include API JSON in site export
+      - name: Copy data into site export
         run: |
-          if [ -d "api" ]; then
-            mkdir -p site/status-page/__sapper__/export/api
-            cp -R api/. site/status-page/__sapper__/export/api/
+          export_dir="site/status-page/__sapper__/export"
+          mkdir -p "$export_dir/api" "$export_dir/history" "$export_dir/graphs"
+          if [ -d "api" ]; then cp -R api/. "$export_dir/api/"; fi
+          if [ -d "history" ]; then cp -R history/. "$export_dir/history/"; fi
+          if [ -d "graphs" ]; then cp -R graphs/. "$export_dir/graphs/"; fi
+      - name: Sanity check site data
+        run: |
+          export_dir="site/status-page/__sapper__/export"
+          test -f "$export_dir/api/status-page.json"
+          test -f "$export_dir/api/summary.json"
+          count=$(ls "$export_dir/history"/*.yml 2>/dev/null | wc -l)
+          if [ "$count" -lt 5 ]; then
+            echo "Expected at least 5 history .yml files, found $count"
+            exit 1
           fi
       - uses: peaceiris/actions-gh-pages@v4
         name: GitHub Pages Deploy

@@ -11,7 +11,6 @@ Monitored endpoints:
 - https://ethnova.net
 - https://pool.ethnova.net
 - https://explorer.ethnova.net
-- https://nodeexplorer.ethnova.net
 - https://rpc.ethnova.net
 - https://api.ethnova.net/stats.json
 
