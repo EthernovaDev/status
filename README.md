@@ -22,3 +22,7 @@ Upptime runs scheduled checks via GitHub Actions, records response times in this
 ## Updating monitors
 
 Edit `.upptimerc.yml` and push to `main`. Workflows use `github.token`, so no PAT is required.
+
+## Troubleshooting
+
+If the status site shows an error, run these GitHub Actions workflows on `main` in order: Uptime CI, Summary CI, then Site CI.
