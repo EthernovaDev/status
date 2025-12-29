@@ -7,6 +7,7 @@ Official uptime and latency status page for core Ethernova services. Built with 
 Live URL: https://ethernovadev.github.io/status/
 
 Monitored endpoints:
+
 - https://ethnova.net
 - https://pool.ethnova.net
 - https://explorer.ethnova.net
