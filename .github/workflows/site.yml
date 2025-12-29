@@ -41,6 +41,12 @@ jobs:
           command: "site"
         env:
           GH_PAT: ${{ github.token }}
+      - name: Include API JSON in site export
+        run: |
+          if [ -d "api" ]; then
+            mkdir -p site/status-page/__sapper__/export/api
+            cp -R api/. site/status-page/__sapper__/export/api/
+          fi
       - uses: peaceiris/actions-gh-pages@v4
         name: GitHub Pages Deploy
         with:
