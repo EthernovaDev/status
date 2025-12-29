@@ -26,7 +26,7 @@ sites:
       - 200
 
 status-website:
-  baseUrl: /status
+  cname: status.ethnova.net
   theme: night
   name: Ethernova Status
   introTitle: "Ethernova Network Status"
