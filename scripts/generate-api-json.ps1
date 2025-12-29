@@ -36,6 +36,7 @@ $owner = Trim-YamlValue ($ownerLine -replace "^\s*owner:\s*", "")
 $repo = Trim-YamlValue ($repoLine -replace "^\s*repo:\s*", "")
 
 $baseUrl = $null
+$cname = $null
 $theme = $null
 $name = $null
 $introTitle = $null
@@ -81,6 +82,7 @@ foreach ($line in $lines) {
     }
   } else {
     if ($line -match "^\s{2}baseUrl:\s*(.+)$") { $baseUrl = Trim-YamlValue $matches[1]; continue }
+    if ($line -match "^\s{2}cname:\s*(.+)$") { $cname = Trim-YamlValue $matches[1]; continue }
     if ($line -match "^\s{2}theme:\s*(.+)$") { $theme = Trim-YamlValue $matches[1]; continue }
     if ($line -match "^\s{2}name:\s*(.+)$") { $name = Trim-YamlValue $matches[1]; continue }
     if ($line -match "^\s{2}introTitle:\s*(.+)$") { $introTitle = Trim-YamlValue $matches[1]; continue }
@@ -90,6 +92,7 @@ foreach ($line in $lines) {
 
 $statusWebsite = [ordered]@{}
 if ($baseUrl) { $statusWebsite.baseUrl = $baseUrl }
+if ($cname) { $statusWebsite.cname = $cname }
 if ($theme) { $statusWebsite.theme = $theme }
 if ($name) { $statusWebsite.name = $name }
 if ($introTitle) { $statusWebsite.introTitle = $introTitle }

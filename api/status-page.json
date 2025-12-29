@@ -1,79 +1,79 @@
 {
-  "owner": "EthernovaDev",
-  "repo": "status",
-  "sites": [
-    {
-      "name": "Website",
-      "url": "https://ethnova.net",
-      "slug": "website",
-      "status": "up"
-    },
-    {
-      "name": "Mining Pool",
-      "url": "https://pool.ethnova.net",
-      "slug": "mining-pool",
-      "status": "up"
-    },
-    {
-      "name": "Explorer",
-      "url": "https://explorer.ethnova.net",
-      "slug": "explorer",
-      "status": "up"
-    },
-    {
-      "name": "Node Explorer",
-      "url": "https://nodeexplorer.ethnova.net",
-      "slug": "node-explorer",
-      "status": "up"
-    },
-    {
-      "name": "Public RPC",
-      "url": "https://rpc.ethnova.net",
-      "slug": "public-rpc",
-      "status": "up"
-    },
-    {
-      "name": "Stats API",
-      "url": "https://api.ethnova.net/stats.json",
-      "slug": "stats-api",
-      "status": "up"
-    }
-  ],
-  "status-website": {
-    "baseUrl": "/status",
-    "theme": "night",
-    "name": "Ethernova Status",
-    "introTitle": "Ethernova Network Status",
-    "introMessage": "Fast, clear uptime and latency for Ethernova RPC, Explorer, and Mining Pool.",
-    "navbar": [
-      {
-        "title": "Status",
-        "href": "/"
-      },
-      {
-        "title": "Website",
-        "href": "https://ethnova.net"
-      },
-      {
-        "title": "Explorer",
-        "href": "https://explorer.ethnova.net"
-      },
-      {
-        "title": "Node Explorer",
-        "href": "https://nodeexplorer.ethnova.net"
-      },
-      {
-        "title": "RPC",
-        "href": "https://rpc.ethnova.net"
-      },
-      {
-        "title": "Pool",
-        "href": "https://pool.ethnova.net"
-      },
-      {
-        "title": "Stats",
-        "href": "https://api.ethnova.net/stats.json"
-      }
-    ]
-  }
+    "owner":  "EthernovaDev",
+    "repo":  "status",
+    "sites":  [
+                  {
+                      "name":  "Website",
+                      "url":  "https://ethnova.net",
+                      "slug":  "website",
+                      "status":  "up"
+                  },
+                  {
+                      "name":  "Mining Pool",
+                      "url":  "https://pool.ethnova.net",
+                      "slug":  "mining-pool",
+                      "status":  "up"
+                  },
+                  {
+                      "name":  "Explorer",
+                      "url":  "https://explorer.ethnova.net",
+                      "slug":  "explorer",
+                      "status":  "up"
+                  },
+                  {
+                      "name":  "Node Explorer",
+                      "url":  "https://nodeexplorer.ethnova.net",
+                      "slug":  "node-explorer",
+                      "status":  "up"
+                  },
+                  {
+                      "name":  "Public RPC",
+                      "url":  "https://rpc.ethnova.net",
+                      "slug":  "public-rpc",
+                      "status":  "up"
+                  },
+                  {
+                      "name":  "Stats API",
+                      "url":  "https://api.ethnova.net/stats.json",
+                      "slug":  "stats-api",
+                      "status":  "up"
+                  }
+              ],
+    "status-website":  {
+                           "cname":  "status.ethnova.net",
+                           "theme":  "night",
+                           "name":  "Ethernova Status",
+                           "introTitle":  "Ethernova Network Status",
+                           "introMessage":  "Fast, clear uptime and latency for Ethernova RPC, Explorer, and Mining Pool.",
+                           "navbar":  [
+                                          {
+                                              "title":  "Status",
+                                              "href":  "/"
+                                          },
+                                          {
+                                              "title":  "Website",
+                                              "href":  "https://ethnova.net"
+                                          },
+                                          {
+                                              "title":  "Explorer",
+                                              "href":  "https://explorer.ethnova.net"
+                                          },
+                                          {
+                                              "title":  "Node Explorer",
+                                              "href":  "https://nodeexplorer.ethnova.net"
+                                          },
+                                          {
+                                              "title":  "RPC",
+                                              "href":  "https://rpc.ethnova.net"
+                                          },
+                                          {
+                                              "title":  "Pool",
+                                              "href":  "https://pool.ethnova.net"
+                                          },
+                                          {
+                                              "title":  "Stats",
+                                              "href":  "https://api.ethnova.net/stats.json"
+                                          }
+                                      ]
+                       }
 }
