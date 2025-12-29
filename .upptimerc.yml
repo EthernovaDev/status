@@ -25,7 +25,7 @@ status-website:
   baseUrl: /status
   name: Ethernova Status
   introTitle: "Ethernova Network Status"
-  introMessage: "Real-time uptime and latency for Ethernova RPC, Explorer, and Mining Pool."
+  introMessage: "Fast, clear uptime and latency for Ethernova RPC, Explorer, and Mining Pool."
   navbar:
     - title: Status
       href: /status
@@ -37,3 +37,5 @@ status-website:
       href: https://rpc.ethnova.net
     - title: Pool
       href: https://pool.ethnova.net
+    - title: Stats
+      href: https://api.ethnova.net/stats.json
