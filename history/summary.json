@@ -40,18 +40,20 @@
     "url": "https://explorer.ethnova.net",
     "icon": "https://icons.duckduckgo.com/ip3/explorer.ethnova.net.ico",
     "slug": "explorer",
-    "status": "up",
+    "status": "down",
     "uptime": "100.00%",
-    "uptimeDay": "100.00%",
+    "uptimeDay": "99.99%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 697,
-    "timeDay": 505,
-    "timeWeek": 668,
-    "timeMonth": 697,
-    "timeYear": 697,
-    "dailyMinutesDown": {}
+    "time": 678,
+    "timeDay": 497,
+    "timeWeek": 645,
+    "timeMonth": 678,
+    "timeYear": 678,
+    "dailyMinutesDown": {
+      "2026-01-07": 0
+    }
   },
   {
     "name": "Node Explorer",
